@@ -28,7 +28,7 @@ class world
           void move();
           void printGrid();
       private:
-        vector<human> grid;
+        vector<human> *grid;
         int day;
 };
 

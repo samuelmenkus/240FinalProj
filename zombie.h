@@ -16,7 +16,7 @@ class zombie : public human
       public:
         //constructors/deconstructor
           zombie();
-          zombie(human&)
+          zombie(human*);
           ~zombie();
 
 };

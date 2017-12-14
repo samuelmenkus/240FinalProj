@@ -15,12 +15,16 @@ human::human() {
   type = 'H';
 }
 
-human::human(human &oldHuman) {
-  type = oldHuman.getType();
+human::human(human *oldHuman) {
+  type = oldHuman->getType();
 }
 
 human::~human() {
 
+}
+
+void human::setType(char _type) {
+  type = _type;
 }
 
 char human::getType() {

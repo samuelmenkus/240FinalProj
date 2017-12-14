@@ -17,13 +17,14 @@ class human
       public:
         //constructors/deconstructor
           human();
-          human(human&);
+          human(human*);
           ~human();
         //getters/setters
           char getType();
           int getRow();
           int getCol();
           bool getMoved();
+          void setType(char);
           void setRow(int);
           void setCol(int);
           void setMoved(bool);

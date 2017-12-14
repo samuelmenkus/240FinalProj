@@ -12,19 +12,13 @@ using namespace std;
 
 //constructors/deconstructor
 zombie::zombie() : human () {
-  type = 'Z';
+  setType('Z');
 }
 
-zombie::zombie(human &oldHuman) : human(human &oldHuman) {
-  type = 'Z';
+zombie::zombie(human *oldHuman) : human(human *oldHuman) {
+  setType('Z');
 }
 
 zombie::~zombie() {
 
-}
-
-//methods
-
-void zombie::print() {
-  cout << getType();
 }
