@@ -1,8 +1,11 @@
 /*******************************************************************************
- * world class header file
- * Names: Samuel Menkus, Alden Faville
- *
- * Copyright (C) 2017 by Samuel Menkus, Alden Faville
+ * Name: Samuel Menkus & Alden Faville
+ * Email: smenkus@email.sc.edu & afaville@email.sc.edu
+ * Function: Serves as a header file for world.cpp, implementing human.h and zombie.h
+ * Input: Varies
+ * Output: Varies
+ * Completed: 12-15-2017
+ * Comments:
  ******************************************************************************/
 #ifndef WORLD_H
 #define WORLD_H
@@ -23,11 +26,12 @@ class world
           ~world();
         //getters/setters
           int getDay();
+        //methods
           void progressDay();
-          bool humansDed(); 
-          //methods
+          bool humansDed();
           void turnHuman(human&);
-          void move(human&);
+          void moveH(human&);
+          void moveZ(zombie&);
           void printGrid();
 
       private:

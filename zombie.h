@@ -1,8 +1,11 @@
 /*******************************************************************************
- * zombie class header file
- * Names: Samuel Menkus, Alden Faville
- *
- * Copyright (C) 2017 by Samuel Menkus, Alden Faville
+ * Name: Samuel Menkus & Alden Faville
+ * Email: smenkus@email.sc.edu & afaville@email.sc.edu
+ * Function: Serves as a header file for zombie.cpp and implements human.h
+ * Input: Varies
+ * Output: Varies
+ * Completed: 12-15-2017
+ * Comments:
  ******************************************************************************/
 #ifndef ZOMBIE_H
 #define ZOMBIE_H

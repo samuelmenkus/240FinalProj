@@ -1,0 +1,35 @@
+Chat log
+
+
+S~ so now we need to make it work?
+A~ I suppose?
+S~ What does CLion say is wrong with it?
+A~ Right now I'm on my PC, so gimme a sec to get Clion up and running.
+S~ K.
+A~ Nice chat log btw, haha.
+S~ I know right.
+A~ Alright, I'm going to copy the new code over and run it, and see what I get.
+S~ K.
+S~ It says that we possibly lost 144 bytes
+A~ Lovely. Any ideas where we're losing it?
+S~ not really
+A~ Well that's rather problematic
+S~ Probably world.cpp and the human vector
+A~ Hm...
+S~ Like the same place we where having problems yesterday
+S~ i think i figured it out. In the default Constructor you need to push the
+        new humans onto the vector. Not just at the vector spot
+A~ Want me to try and run it now?
+S~ yeah. It should sort of work
+A~ WE GOT SOMETHING!!!! Check Discord
+S~ I did it with only 172 errors
+A~ Oh dear
+A~ Any idea what's causing the issue here?
+S~ try to run it again
+A~ What files should I update/what did you change?
+S~ world.cpp <- That should be it
+S~ try again still just world.cpp
+S~ try running it. world.h and world.cpp is what i updated
+        I think it works now.
+A~
+S~
