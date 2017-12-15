@@ -15,15 +15,15 @@ using namespace std;
 class human
 {
       public:
-        //constructors/deconstructor
+        //constructors/de-constructor
           human();
-          human(human*);
+          human(const human&);
           ~human();
         //getters/setters
-          char getType();
-          int getRow();
-          int getCol();
-          bool getMoved();
+          char getType() const;
+          int getRow() const;
+          int getCol() const;
+          bool getMoved() const;
           void setType(char);
           void setRow(int);
           void setCol(int);
@@ -31,6 +31,7 @@ class human
         //methods
           void print();
           int checkMove();
+          bool equals(human&);
 
       private:
         char type;

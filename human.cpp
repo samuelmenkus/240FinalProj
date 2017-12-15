@@ -13,10 +13,16 @@ using namespace std;
 //constructors/deconstructor
 human::human() {
   type = 'H';
+  row = 0;
+  col = 0;
+  moved = false;
 }
 
-human::human(human *oldHuman) {
-  type = oldHuman->getType();
+human::human(const human &oldHuman) {
+  type = oldHuman.getType();
+  row = oldHuman.getRow();
+  col = oldHuman.getCol();
+  moved = false;
 }
 
 human::~human() {
@@ -27,19 +33,19 @@ void human::setType(char _type) {
   type = _type;
 }
 
-char human::getType() {
+char human::getType() const {
   return type;
 }
 
-int human::getRow() {
+int human::getRow() const {
   return row;
 }
 
-int human::getCol() {
+int human::getCol() const {
   return col;
 }
 
-bool human::getMoved() {
+bool human::getMoved() const {
   return moved;
 }
 
@@ -60,7 +66,7 @@ void human::setMoved(bool _moved) {
 }
 
 void human::print() {
-  cout << getType();
+  cout << getType() << " at col " << getCol() << " at row " << getRow();
 }
 
 int human::genMove() {
@@ -100,5 +106,23 @@ int human::checkMove() { // temp=Move | 4=Can't move
     else {
       return temp;
     }
+  }
+}
+
+bool human::equals(human &otherHuman) {
+  if (getType() != otherHuman.getType()) {
+    return false;
+  }
+  else if (getCol() != otherHuman.getCol()) {
+    return false;
+  }
+  else if (getRow() != otherHuman.getRow()) {
+    return false;
+  }
+  else if (getMoved() != otherHuman.getMoved()) {
+    return false;
+  }
+  else {
+    return true;
   }
 }

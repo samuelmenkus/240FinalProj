@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <vector>
 #include "human.h"
 #include "zombie.h"
 
@@ -23,12 +24,18 @@ class world
         //getters/setters
           int getDay();
           void progressDay();
-        //methods
+          bool humansDed(); 
+          //methods
           void turnHuman(human&);
-          void move();
+          void move(human&);
           void printGrid();
+
       private:
-        vector<human> *grid;
+        int intNumHumans;
+        int intNumZombies;
+        std::vector<human> humans;
+        std::vector<zombie> zombies;
+        char grid[8][8];
         int day;
 };
 

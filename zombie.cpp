@@ -11,12 +11,18 @@
 using namespace std;
 
 //constructors/deconstructor
-zombie::zombie() : human () {
+zombie::zombie() {
   setType('Z');
+  setCol(0);
+  setRow(0);
+  setMoved(false);
 }
 
-zombie::zombie(human *oldHuman) : human(human *oldHuman) {
+zombie::zombie(const zombie &oldZombie) {
   setType('Z');
+  setCol(oldZombie.getCol());
+  setRow(oldZombie.getRow());
+  setMoved(oldZombie.getMoved());
 }
 
 zombie::~zombie() {
