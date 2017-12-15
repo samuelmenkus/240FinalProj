@@ -308,22 +308,6 @@ void world::progressDay() {
     }
   }
 
-/*
-  for (int i = 0; i < 8; i++) {
-    for (int j = 0; j < 8; j++) {
-      grid[i][j] = ' ';
-    }
-  }
-
-  for (int i = 0; i < humans.size(); i++) {
-    grid[humans.at(i).getCol()][humans.at(i).getRow()] = 'H';
-  }
-
-  for (int i = 0; i < zombies.size(); i++) {
-    grid[zombies.at(i).getCol()][zombies.at(i).getRow()] = 'Z';
-  }
-*/
-
   day++;
   printGrid();
 }

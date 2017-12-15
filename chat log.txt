@@ -31,5 +31,204 @@ S~ world.cpp <- That should be it
 S~ try again still just world.cpp
 S~ try running it. world.h and world.cpp is what i updated
         I think it works now.
-A~
-S~
+A~ Once CLion updates I'll run it. Hopefully we're all set now
+S~ Yeah Hopefully.
+A~ While I wait on the update, run Valgrind and see what we get
+S~ i did there are no memory leaks or errors. that show up. i think that we
+        might still be having some problems with keepint the right number of
+        units in the grid.
+S~ What the hell is that bird noise telling me?
+A~ Bird noise?
+S~ it was like clock sound. then chicken sound then somebody said SOMETHING.
+A~ Ohhhh, LOL. That's USC's emergency announcement system. every Friday at noon
+        they test it by playing those sounds then play the announcement that it
+        was just a test.
+S~ How has that been the first time ive heard it this semester?
+A~ Beats me
+S~ it was freaky.
+        mines works fine. I pushed it to the gitHub
+A~ Gotcha, I'll update my files and see if that fixes it
+S~ Ill be back in a bit.
+A~ Ight. Sorry, CLion is being a pain in the dick. I'll put here what happens.
+S~ thats why i dont use it
+A~ Mine is still messed up. I'm gonna try running it on my Mac
+S~ K
+A~ So I ran it on my Mac, and there's no weird ending in the middle of printing the grid,
+        but, the grid is exactly the same no matter how many times I re-run it.
+S~ That is wierd. It dosnt do that to me, actually it does.
+A~ Well that's an issue
+S~ Try rebuilding it
+A~ Did you change anything or just try as-is right now?
+S~ I didnt change nothing
+A~ Alright
+A~ Yep, same thing. Exact same scenario every time.
+S~ Its weird. I dont like it, but i cant think of anything that is wrong.
+A~ Me neither. Do you want to just turn it in?
+S~ lets look it over one last time and then just turn it in
+A~ Sounds good to me.
+S~ World at Day 5, This is the last day for me. Whats yours look like?
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z |   | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z |   | Z | Z | Z |   | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z |   | Z | Z | Z | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | Z | Z |   | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z |   | Z | Z |   | Z |   |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+A~ On my PC it rarely makes it to day 5. Lemme check my MAC. For now, here's
+        what mine looks like when it does get to day 5:
+
+      World at Day 5
+      +---+---+---+---+---+---+---+---+
+      | Z | Z | Z |   | Z | Z | Z |   |
+      +---+---+---+---+---+---+---+---+
+      | Z | Z | Z |   | Z |   | Z | Z |
+      +---+---+---+---+---+---+---+---+
+      |   | Z | Z | Z | Z | Z | Z | Z |
+      +---+---+---+---+---+---+---+---+
+      | Z | Z | Z | Z | Z |   | Z | Z |
+      +---+---+---+---+---+---+---+---+
+      | Z |   | Z | Z | Z |   |   | Z |
+      +---+---+---+---+---+---+---+---+
+      | Z | Z | Z |   | Z | Z |   | H |
+      +---+---+---+---+---+---+---+---+
+      | Z | Z | Z | Z | Z | Z | Z |   |
+      +---+---+---+---+---+---+---+---+
+      | Z | Z | Z | Z | Z | Z | Z | H |
+      +---+---+---+---+---+---+---+---+
+S~ so it is different. Thats good.
+A~ I'm gonna check my mac again.
+S~ K
+A~ On there it only makes it to day 2 again. Did you change anything?
+S~ try again. I changes world.cpp
+A~ Same thing on PC. Cuts off at random places. And on mac....Same as before.
+        Only gets to day 1 with exactly the same pattern every time. Are you
+        getting that too?
+S~ Mines works
+World at Day 0
+    +---+---+---+---+---+---+---+---+
+    | Z | H | Z | H | H | H | H | H |
+    +---+---+---+---+---+---+---+---+
+    | H | H | Z | H | H |   | H |   |
+    +---+---+---+---+---+---+---+---+
+    | Z | H | H | H | H | Z | H | Z |
+    +---+---+---+---+---+---+---+---+
+    |   | H | H | H | H | Z | H | H |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | H | H | H | H | H |   |
+    +---+---+---+---+---+---+---+---+
+    |   | H | H | Z | H | H |   | H |
+    +---+---+---+---+---+---+---+---+
+    |   | H |   | H | Z | H |   |   |
+    +---+---+---+---+---+---+---+---+
+    | H | H | H | H | H | H | H |   |
+    +---+---+---+---+---+---+---+---+
+World at Day 1
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | H | H | H | H |
+    +---+---+---+---+---+---+---+---+
+    | H | H | Z | Z | H | Z |   |   |
+    +---+---+---+---+---+---+---+---+
+    | Z | H | H | H | H | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | H | Z | H | Z | H | H |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | H | Z | H | Z |   | H |
+    +---+---+---+---+---+---+---+---+
+    | Z | H | Z | Z | Z | H |   | H |
+    +---+---+---+---+---+---+---+---+
+    |   | H | H | Z | Z | Z |   |   |
+    +---+---+---+---+---+---+---+---+
+    | H | H |   | H | Z | H | H |   |
+    +---+---+---+---+---+---+---+---+
+World at Day 2
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z | H | H |
+    +---+---+---+---+---+---+---+---+
+    | Z | H | Z | Z | Z | Z |   | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z |   | H | H | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | Z | Z | Z | Z | H | Z |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | Z | Z | Z |   | Z | H |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z |   | H |
+    +---+---+---+---+---+---+---+---+
+    | H |   | Z | Z | Z | Z |   |   |
+    +---+---+---+---+---+---+---+---+
+    | H |   | H | H | Z | H | Z |   |
+    +---+---+---+---+---+---+---+---+
+World at Day 3
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z |   | H |
+    +---+---+---+---+---+---+---+---+
+    | Z | H | Z | Z | Z | Z | H | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z |   | Z | Z | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | Z | Z | Z | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | Z | Z | Z | Z |   | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z |   | Z | Z | Z | Z |   | H |
+    +---+---+---+---+---+---+---+---+
+    | H | Z |   | Z | Z | Z |   |   |
+    +---+---+---+---+---+---+---+---+
+    | H | H | Z | Z | Z | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+World at Day 4
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z |   | H |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z |   | Z | Z | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | Z | Z | Z | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z |   | Z | Z | Z | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z |   | Z | Z | Z |   |   | H |
+    +---+---+---+---+---+---+---+---+
+    | H | Z |   | Z | Z |   | Z |   |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+World at Day 5
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z |   | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z |   | Z | Z | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z |   | Z | Z | Z |   | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z |   | Z | Z | Z | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+    |   | Z | Z | Z |   | Z | Z | Z |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z |   | Z | Z |   | Z |   |
+    +---+---+---+---+---+---+---+---+
+    | Z | Z | Z | Z | Z | Z | Z |   |
+    +---+---+---+---+---+---+---+---+
+
+A~ I don't know why mine doesn't, but it looks like yours definitely does.
+      So I say we turn that in. Also, make sure to push it to the repo.
+S~ The only problem mines has is that it always runs the same way.
+A~ That definitely is a problem.
+S~ but at least it finishes
+A~ I was gonna say, yeah. At this point I'm not sure what else we could do.
+        It compiles with no memory leaks, and at least half works.
+S~ so im going to zip it up and submit it.
+A~ Sounds good to me.
